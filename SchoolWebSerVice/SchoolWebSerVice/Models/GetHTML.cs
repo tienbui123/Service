@@ -327,10 +327,21 @@ namespace SchoolWebSerVice.Models
             return listdt;
         }
 
-        
 
-
-
+       public static List<User> getUser(string id)
+       {
+           List<User> list = new List<User>();
+           HtmlWeb htmlWeb = new HtmlWeb();
+           HtmlDocument document = htmlWeb.Load(makeUrlTKB(id));
+           HtmlNode node = document.DocumentNode.SelectSingleNode("//*[@id='ctl00_ContentPlaceHolder1_ctl00_lblContentTenSV']");
+           User user = new User();
+           user.Id = id;
+           user.Name = node.InnerText.Trim();
+           user.Password = "";
+           list.Add(user);
+           return list;
+       }
+      
         public static string makeUrlTKB(string msv)
         {
             string data = url + "page=thoikhoabieu&sta=1&id=" + msv;

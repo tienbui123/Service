@@ -102,3 +102,37 @@ G:\Xay dung phan mem\School\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Web
 G:\Xay dung phan mem\School\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.csprojResolveAssemblyReference.cache
 G:\Xay dung phan mem\School\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.dll
 G:\Xay dung phan mem\School\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.pdb
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\SchoolWebSerVice.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\SchoolWebSerVice.pdb
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Http.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Providers.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\WebGrease.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\HtmlAgilityPack.pdb
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\HtmlAgilityPack.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Http.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.pdb

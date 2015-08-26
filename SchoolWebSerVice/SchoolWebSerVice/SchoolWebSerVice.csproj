@@ -130,6 +130,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LichThiController.cs" />
     <Compile Include="Controllers\ThoiKhoaBieuController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -139,6 +140,7 @@
     <Compile Include="Models\LichThi.cs" />
     <Compile Include="Models\MonHoc.cs" />
     <Compile Include="Models\ThoiKhoaBieu.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
