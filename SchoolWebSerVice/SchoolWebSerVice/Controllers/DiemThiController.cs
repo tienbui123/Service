@@ -15,7 +15,7 @@ namespace SchoolWebSerVice.Controllers
 
         public IEnumerable<DiemThi> GetAllDiemThi()
         {
-            return GetHTML.getDiemThi(GetHTML.makeUrlDT("3112410012"));
+            return GetHTML.getDiemThi("3112410012");
         }
 
         public IEnumerable<DiemThi> GetDiemThi(string id)
