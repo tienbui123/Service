@@ -138,3 +138,40 @@ C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolW
 C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.pdb
 C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\RestSharp.dll
 C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\RestSharp.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\SchoolWebSerVice.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\SchoolWebSerVice.pdb
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\Antlr3.Runtime.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\EntityFramework.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\HtmlAgilityPack.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\Microsoft.Web.Infrastructure.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\Newtonsoft.Json.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\RestSharp.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Net.Http.Formatting.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Helpers.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Http.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Http.WebHost.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Mvc.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Optimization.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Providers.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Razor.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.Deployment.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.Razor.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\WebGrease.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\HtmlAgilityPack.pdb
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\HtmlAgilityPack.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\RestSharp.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\EntityFramework.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\Newtonsoft.Json.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Net.Http.Formatting.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Helpers.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Http.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Http.WebHost.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Mvc.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.Razor.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.Deployment.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\bin\System.Web.WebPages.Razor.xml
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.csprojResolveAssemblyReference.cache
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.dll
+G:\Xay dung phan mem\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.pdb

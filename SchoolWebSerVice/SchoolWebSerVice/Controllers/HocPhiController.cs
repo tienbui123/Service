@@ -1,23 +1,19 @@
 ﻿using SchoolWebSerVice.Models;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net;
-using System.Text;
 using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
-
 
 namespace SchoolWebSerVice.Controllers
 {
-    public class HomeController : Controller
+    public class HocPhiController : ApiController
     {
-        public ActionResult Index()
+        public HocPhi GetHocPhi()
         {
-
-            ViewBag.Messenger = GetHTML.getHocPhi();
-            return View();
+            return GetHTML.getHocPhi();
         }
+
     }
 }
