@@ -1,4 +1,5 @@
 ﻿using HtmlAgilityPack;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -216,63 +217,76 @@ namespace SchoolWebSerVice.Models
             return listlt;
         }
 
-       public static List<DiemThi> getDiemThi(string url)
+       public static List<DiemThi> getDiemThi(string id)
         {
             List<DiemThi> listdt = new List<DiemThi>();
             DiemThi dT = new DiemThi();
             List<MonHoc> listMH = new List<MonHoc>();
-            HtmlWeb htmlWeb = new HtmlWeb();
 
 
-            HtmlDocument document = htmlWeb.Load(url);
+            HtmlDocument document = new HtmlDocument();
+            document.LoadHtml(getAllDiem(id));
 
             HtmlNodeCollection nodes;
             int k = 2;
-            int i = 0;
+            int i = 1;
             do
             {
-                nodes = null;
                 nodes = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_div1']/table/tr[" + k + "]/td/span");
 
                 if (nodes != null)
                 {
-                    
 
-                    if (k == 2)
+
+                    if (nodes.Count == 1)
                     {
+                        dT.ListMH = listMH;
+                        listdt.Add(dT);
+                        dT = new DiemThi();
+                        listMH = new List<MonHoc>();
                         dT.Thoigian = nodes.First().InnerText;
                     }
                     else if (nodes.Count == 2)
                     {
                         HtmlNodeCollection node = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_div1']/table/tr[" + k + "]/td/span[2]");
-                        i++;
+
                         switch (i)
                         {
                             case 1:
                                 dT.DiemTBHKHM = node.First().InnerText;
+                                i++;
                                 break;
                             case 2:
                                 dT.DiemTBHKHB = node.First().InnerText;
+                                i++;
                                 break;
                             case 3:
                                 dT.DiemTBTLHM = node.First().InnerText;
+                                i++;
                                 break;
                             case 4:
                                 dT.DiemTBTLHB = node.First().InnerText;
+                                i++;
                                 break;
                             case 5:
                                 dT.SoTCD = node.First().InnerText;
+                                i++;
                                 break;
                             case 6:
                                 dT.SoTCTL = node.First().InnerText;
+                                i++;
                                 break;
                             case 7:
                                 dT.DiemRL = node.First().InnerText;
+                                i++;
                                 break;
                             case 8:
                                 dT.LoaiRL = node.First().InnerText;
+                                i = 1;
+
                                 break;
                         }
+
                     }
                     else
                     {
@@ -280,7 +294,7 @@ namespace SchoolWebSerVice.Models
                         for (int j = 1; j <= 10; j++)
                         {
                             HtmlNodeCollection nodes1 = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_div1']/table/tr[" + k + "]/td[" + j + "]/span");
-                          
+
                             foreach (var node in nodes1)
                             {
                                 switch (j)
@@ -324,8 +338,56 @@ namespace SchoolWebSerVice.Models
             while (nodes != null);
             dT.ListMH = listMH;
             listdt.Add(dT);
+            listdt.Remove(listdt[0]);
             return listdt;
         }
+       public static string getAllDiem(string id)
+       {
+           //const string baseUrl = @"http://thongtindaotao.sgu.edu.vn/Default.aspx?page=xemdiemthi&id=3110410023";
+           const string baseUrl = @"http://thongtindaotao.sgu.edu.vn";
+
+           CookieContainer _cookieJar = new CookieContainer();
+
+           var client = new RestClient(baseUrl);
+           var request = new RestRequest("/Default.aspx")
+           {
+               AlwaysMultipartFormData = true,
+               Method = Method.GET,
+           };
+
+           //request.AddParameter("page", "test", ParameterType.RequestBody);
+           request.AddParameter("page", "xemdiemthi");
+           request.AddParameter("id", id);
+
+           //client.CookieContainer = _cookieJar;
+
+           IRestResponse response = client.Execute(request);
+           var content = response.Content;
+
+           var sessionCookie = response.Cookies.SingleOrDefault(x => x.Name == "ASP.NET_SessionId");
+           if (sessionCookie != null)
+           {
+               _cookieJar.Add(new Cookie(sessionCookie.Name, sessionCookie.Value, sessionCookie.Path, sessionCookie.Domain));
+           }
+
+           request = new RestRequest("/Default.aspx")
+           {
+               AlwaysMultipartFormData = true,
+               Method = Method.POST,
+           };
+
+           request.AddParameter("page", "xemdiemthi", ParameterType.QueryString);
+           request.AddParameter("id", id, ParameterType.QueryString);
+           request.AddParameter("__EVENTTARGET", "ctl00$ContentPlaceHolder1$ctl00$lnkChangeview2", ParameterType.GetOrPost);
+           request.AddParameter("__VIEWSTATE", "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", ParameterType.GetOrPost);
+
+           client.CookieContainer = _cookieJar;
+
+           response = client.Execute(request);
+           content = response.Content;
+
+           return content;
+       }
 
 
        public static List<User> getUser(string id)

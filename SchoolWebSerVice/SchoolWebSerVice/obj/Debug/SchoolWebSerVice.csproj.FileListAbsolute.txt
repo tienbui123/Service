@@ -136,3 +136,5 @@ C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolW
 C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.dll
 C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\obj\Debug\SchoolWebSerVice.pdb
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\RestSharp.dll
+C:\Users\Administrator\Documents\GitHub\Service\Service\SchoolWebSerVice\SchoolWebSerVice\bin\RestSharp.xml

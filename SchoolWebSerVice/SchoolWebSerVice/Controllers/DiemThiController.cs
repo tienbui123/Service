@@ -13,14 +13,11 @@ namespace SchoolWebSerVice.Controllers
         //
         // GET: /DiemThi/
 
-        public IEnumerable<DiemThi> GetAllDiemThi()
-        {
-            return GetHTML.getDiemThi(GetHTML.makeUrlDT("3112410012"));
-        }
 
+        
         public IEnumerable<DiemThi> GetDiemThi(string id)
         {
-            return GetHTML.getDiemThi(GetHTML.makeUrlDT(id));
+            return   GetHTML.getDiemThi(id);
         }
     }
 }
