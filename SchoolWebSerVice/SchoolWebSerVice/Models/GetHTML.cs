@@ -475,14 +475,14 @@ namespace SchoolWebSerVice.Models
 
             return content;
         }
-
-
+        
         public static List<User> getUser(string id)
         {
             List<User> list = new List<User>();
             HtmlWeb htmlWeb = new HtmlWeb();
             HtmlDocument document = htmlWeb.Load(makeUrlTKB(id));
-            HtmlNode node = document.DocumentNode.SelectSingleNode("//[@id='ctl00_ContentPlaceHolder1_ctl00_lblContentTenSV']");
+            HtmlNodeCollection node1 = document.DocumentNode.SelectNodes(string.Format("//*[@id='ctl00_ContentPlaceHolder1_ctl00_lblContentTenSV']"));
+            HtmlNode node = node1.First();
             User user = new User();
             user.Id = id;
             user.Name = node.InnerText.Trim();
@@ -490,7 +490,7 @@ namespace SchoolWebSerVice.Models
             list.Add(user);
             return list;
         }
-
+      
         public static string makeUrlTKB(string msv)
         {
             string data = url + "page=thoikhoabieu&sta=1&id=" + msv;
