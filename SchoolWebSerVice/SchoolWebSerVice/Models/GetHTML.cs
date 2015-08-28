@@ -26,13 +26,13 @@ namespace SchoolWebSerVice.Models
             // dòng 1 
             HtmlNodeCollection nodes;
             //all
-            string s = "/table[1]";
-            //int k=1;
+            //string s = "/table[1]";
+            int k=1;
             do
             {
 
-                nodes = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_pnlHeader']/table/tr[2]/td/div[2]" + s);
-                //nodes = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_pnlHeader']/table/tr[2]/td/div[2]/table["+k+"]");
+                //nodes = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_pnlHeader']/table/tr[2]/td/div[2]" + s);
+                nodes = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_pnlHeader']/table/tr[2]/td/div[2]/table["+k+"]");
                 if (nodes != null)
                 {
 
@@ -40,8 +40,8 @@ namespace SchoolWebSerVice.Models
                     for (int j = 1; j <= 15; j++)
                     {
 
-                        HtmlNodeCollection nodes1 = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_pnlHeader']/table/tr[2]/td/div[2]" + s + "/tr/td[" + j + "]");
-                        //HtmlNodeCollection nodes1 = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_pnlHeader']/table/tr[2]/td/div[2]"/table["+k+"] /tr/td[" + j + "]");
+                       // HtmlNodeCollection nodes1 = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_pnlHeader']/table/tr[2]/td/div[2]" + s + "/tr/td[" + j + "]");
+                        HtmlNodeCollection nodes1 = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_pnlHeader']/table/tr[2]/td/div[2]/table["+k+"] /tr/td[" + j + "]");
                         foreach (var node in nodes1)
                         {
                             switch (j)
@@ -85,8 +85,8 @@ namespace SchoolWebSerVice.Models
                     }
                     tkbs.Add(tkb);
                 }
-                //  k++;
-                s += "/table[1]";
+                  k++;
+                //s += "/table[1]";
             }
             while (nodes != null);
             return tkbs;
@@ -170,7 +170,7 @@ namespace SchoolWebSerVice.Models
         {
             List<DiemThi> listdt = new List<DiemThi>();
             DiemThi dT = new DiemThi();
-            List<MonHoc> listMH = new List<MonHoc>();
+            List<DiemMon> listDM = new List<DiemMon>();
 
 
             HtmlDocument document = new HtmlDocument();
@@ -189,10 +189,10 @@ namespace SchoolWebSerVice.Models
 
                     if (nodes.Count == 1)
                     {
-                        dT.ListMH = listMH;
+                        dT.ListDM = listDM;
                         listdt.Add(dT);
                         dT = new DiemThi();
-                        listMH = new List<MonHoc>();
+                        listDM = new List<DiemMon>();
                         dT.Thoigian = nodes.First().InnerText;
                     }
                     else if (nodes.Count == 2)
@@ -239,7 +239,7 @@ namespace SchoolWebSerVice.Models
                     }
                     else
                     {
-                        MonHoc mH = new MonHoc();
+                        DiemMon dm = new DiemMon();
                         for (int j = 1; j <= 10; j++)
                         {
                             HtmlNodeCollection nodes1 = document.DocumentNode.SelectNodes("//*[@id='ctl00_ContentPlaceHolder1_ctl00_div1']/table/tr[" + k + "]/td[" + j + "]/span");
@@ -249,43 +249,43 @@ namespace SchoolWebSerVice.Models
                                 switch (j)
                                 {
                                     case 2:
-                                        mH.MaMH = node.InnerText;
+                                        dm.MaMH = node.InnerText;
                                         break;
                                     case 3:
-                                        mH.TenMH = node.InnerText;
+                                        dm.TenMH = node.InnerText;
                                         break;
                                     case 4:
-                                        mH.SoTC = node.InnerText;
+                                        dm.SoTC = node.InnerText;
                                         break;
                                     case 5:
-                                        mH.PhanTramKT = node.InnerText;
+                                        dm.PhanTramKT = node.InnerText;
                                         break;
                                     case 6:
-                                        mH.PhanTramThi = node.InnerText;
+                                        dm.PhanTramThi = node.InnerText;
                                         break;
                                     case 7:
-                                        mH.DiemKT = node.InnerText;
+                                        dm.DiemKT = node.InnerText;
                                         break;
                                     case 8:
-                                        mH.ThiL1 = node.InnerText;
+                                        dm.ThiL1 = node.InnerText;
                                         break;
                                     case 9:
-                                        mH.TongDiem = node.InnerText;
+                                        dm.TongDiem = node.InnerText;
                                         break;
                                     case 10:
-                                        mH.TongDiemChu = node.InnerText;
+                                        dm.TongDiemChu = node.InnerText;
                                         break;
 
                                 }
                             }
                         }
-                        listMH.Add(mH);
+                        listDM.Add(dm);
                     }
                 }
                 k++;
             }
             while (nodes != null);
-            dT.ListMH = listMH;
+            dT.ListDM = listDM;
             listdt.Add(dT);
             listdt.Remove(listdt[0]);
             return listdt;
