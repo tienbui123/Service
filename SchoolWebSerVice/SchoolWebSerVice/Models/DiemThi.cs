@@ -73,12 +73,12 @@ namespace SchoolWebSerVice.Models
             set { loaiRL = value; }
         }
 
-        private List<MonHoc> listMH;
+        private List<DiemMon> listDM;
 
-        public List<MonHoc> ListMH
+        public List<DiemMon> ListDM
         {
-            get { return listMH; }
-            set { listMH = value; }
+            get { return listDM; }
+            set { listDM = value; }
         }
 
     }

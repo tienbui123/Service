@@ -140,6 +140,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CTHocPhi.cs" />
+    <Compile Include="Models\DiemMon.cs" />
     <Compile Include="Models\DiemThi.cs" />
     <Compile Include="Models\GetHTML.cs" />
     <Compile Include="Models\HocPhi.cs" />
